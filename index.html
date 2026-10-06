@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SUPREME BHAI 🏏</title>
+  <meta name="description" content="Simple cricket landing page for Supreme Bhai" />
+  <style>
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:16px;
+      font-family:Arial,Helvetica,sans-serif;
+      background:linear-gradient(180deg,#071521 0%,#0d2335 100%);
+      color:#fff;
+    }
+    .page{
+      width:min(100%,390px);
+      background:linear-gradient(180deg,#0d1e2e 0%,#10283e 100%);
+      border-radius:28px;
+      padding:26px 20px 28px;
+      text-align:center;
+      box-shadow:0 24px 70px rgba(0,0,0,.40);
+      position:relative;
+      overflow:hidden;
+    }
+    .page::before,
+    .page::after{
+      content:"";
+      position:absolute;
+      border-radius:50%;
+      background:rgba(78,195,255,.12);
+      z-index:0;
+    }
+    .page::before{width:140px;height:140px;top:-55px;left:-45px}
+    .page::after{width:110px;height:110px;bottom:-45px;right:-35px}
+    .content{position:relative;z-index:1}
+
+    .name{
+      font-size:32px;
+      font-weight:900;
+      line-height:1.05;
+      margin:0 0 18px;
+      letter-spacing:-.6px;
+      text-transform:uppercase;
+    }
+    .name span{color:#5dd0ff}
+
+    .dp-wrap{
+      width:170px;
+      height:170px;
+      margin:0 auto 18px;
+      padding:6px;
+      border-radius:50%;
+      background:linear-gradient(135deg,#42c3ff,#9ce7ff,#42c3ff);
+      animation:dpGlow 2.4s ease-in-out infinite;
+      box-shadow:0 0 0 0 rgba(66,195,255,.35);
+    }
+    .dp{
+      width:100%;
+      height:100%;
+      border-radius:50%;
+      object-fit:cover;
+      object-position:center;
+      display:block;
+      border:4px solid #0d1f30;
+    }
+
+    .subtitle{
+      margin:0 0 16px;
+      font-size:14px;
+      color:#cddcea;
+      line-height:1.5;
+    }
+
+    .tags{
+      display:flex;
+      justify-content:center;
+      gap:8px;
+      flex-wrap:wrap;
+      margin:0 0 22px;
+    }
+    .tag{
+      padding:10px 14px;
+      border-radius:999px;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.10);
+      font-size:13px;
+      font-weight:800;
+      color:#eaf5ff;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.04);
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      width:100%;
+      text-decoration:none;
+      color:#062034;
+      font-size:18px;
+      font-weight:900;
+      padding:17px 16px;
+      border-radius:18px;
+      background:linear-gradient(90deg,#48c8ff,#8fe8ff);
+      box-shadow:0 12px 28px rgba(72,200,255,.28);
+      animation:btnPulse 1.8s ease-in-out infinite;
+    }
+    .btn .icon{font-size:20px;line-height:1}
+
+    .footer{
+      margin-top:16px;
+      font-size:12px;
+      color:#86a7bf;
+      font-weight:700;
+      letter-spacing:1px;
+      text-transform:uppercase;
+    }
+
+    @keyframes btnPulse{
+      0%,100%{transform:translateY(0) scale(1);box-shadow:0 12px 28px rgba(72,200,255,.28)}
+      50%{transform:translateY(-3px) scale(1.02);box-shadow:0 18px 36px rgba(72,200,255,.40)}
+    }
+    @keyframes dpGlow{
+      0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(66,195,255,.12), 0 10px 28px rgba(66,195,255,.18)}
+      50%{transform:scale(1.025);box-shadow:0 0 0 10px rgba(66,195,255,.06), 0 16px 34px rgba(66,195,255,.30)}
+    }
+
+    @media (max-width:420px){
+      body{padding:10px}
+      .page{padding:22px 16px 24px;border-radius:22px}
+      .name{font-size:28px}
+      .dp-wrap{width:155px;height:155px}
+      .btn{font-size:17px}
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="content">
+      <h1 class="name">SUPREME <span>BHAI 🏏</span></h1>
+      <div class="dp-wrap">
+        <img class="dp" src="dp.jpg" alt="SUPREME BHAI DP" />
+      </div>
+      <p class="subtitle">Daily cricket community updates with a clean simple look.</p>
+      <div class="tags">
+        <div class="tag">Toss</div>
+        <div class="tag">Match</div>
+        <div class="tag">Session</div>
+      </div>
+      <a class="btn" href="https://t.me/+fxj2RieemTAwZDY1" target="_blank" rel="noopener">
+        <span class="icon">✈</span>
+        <span>JOIN TELEGRAM</span>
+      </a>
+      <div class="footer">Cricket Community</div>
+    </div>
+  </div>
+</body>
+</html>
